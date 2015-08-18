@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
+  <title>Jucabox - a sua juquebox virtual</title>
   <!-- Place favicon.ico in the `app/` directory -->
 
   <!-- Chrome for Android theme color -->
@@ -65,24 +65,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Toolbar -->
         <paper-toolbar id="drawerToolbar">
-          <span class="paper-font-title">Menu</span>
+          <span class="paper-font-title">Olá, Pedremildo</span>
         </paper-toolbar>
 
         <!-- Drawer Content -->
         <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
           <a data-route="home" href="/">
             <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
+            <span>Bar do Italiano</span>
           </a>
 
           <a data-route="users" href="/users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <iron-icon icon="star"></iron-icon>
+            <span>Ranking</span>
           </a>
 
           <a data-route="contact" href="/contact">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+            <iron-icon icon="perm-identity"></iron-icon>
+            <span>Informações</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -101,12 +101,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">Jucabox</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">The future of the web today</div>
+            <div class="bottom-title paper-font-subhead">
+              A sua Jukebox virtual
+            </div>
           </div>
 
         </paper-toolbar>
@@ -117,59 +119,156 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <section data-route="home">
               <paper-material elevation="1">
-                <my-greeting></my-greeting>
-
-                <p class="paper-font-subhead">You now have:</p>
-                <my-list></my-list>
-
-                <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
+                <div class="paper-font-subhead">
+                  Tocando agora:
+                </div>
+                <h2 class="paper-font-title jb-color-text--primary">
+                  Are you satisfied
+                  <br>
+                  <small class="paper-font-subhead jb-color-text--secondary-text">
+                    <i>Marina and the Diamonds</i>
+                    <br/> 2009
+                  </small>
+                </h2>
               </paper-material>
+
               <paper-material elevation="1">
-                <p class="paper-font-body2">This is another card.</p>
+                <h2 class="paper-font-title">Próximas músicas</h2>
+                <section>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Rhinestone Eyes</div>
+                      <div secondary><i>Gorillaz</i> ─ 2010</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="star-border"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Fa-fa-fa</div>
+                      <div secondary><i>Datarock</i> ─ 2007</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="star-border"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>My Patch</div>
+                      <div secondary><i>Jim Noir</i> ─ 2005</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="star-border"></paper-icon-button>
+                  </paper-item>
+                </section>
               </paper-material>
 
-              <paper-material elevation="1" class="paper-font-body2">
-                <h1 id="license">License</h1>
-                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
-                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-                <ul>
-                <li>Redistributions of source code must retain the above copyright
-                notice, this list of conditions and the following disclaimer.</li>
-                <li>Redistributions in binary form must reproduce the above
-                copyright notice, this list of conditions and the following disclaimer
-                in the documentation and/or other materials provided with the
-                distribution.</li>
-                <li>Neither the name of Google Inc. nor the names of its
-                contributors may be used to endorse or promote products derived from
-                this software without specific prior written permission.</li>
-                </ul>
-                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+              <paper-material elevation="1">
+                <h2 class="paper-font-title">Escolha uma música</h2>
+                <paper-input label="Pesquisar por nome, artista, ano..."></paper-input>
+                <section>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Around the bend</div>
+                      <div secondary><i>Asteroids Galaxy Tour</i> ─ 2009</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="check"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>The Age of Aquarius (Let the sunshine in)</div>
+                      <div secondary><i>The 5<sup>th</sup> Dimension </i> ─ 1971</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="check"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Hunting High and Low</div>
+                      <div secondary><i>a-ha</i> ─ 1985</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="check"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Toxic</div>
+                      <div secondary><i>Britney Spears</i> ─ 2003</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="check"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Clash</div>
+                      <div secondary><i>Caravan Palace</i> ─ 2012</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="check"></paper-icon-button>
+                  </paper-item>
+                  <paper-item>
+                    <paper-item-body two-line>
+                      <div>Of Moons, Birds &amp; Monsters </div>
+                      <div secondary><i>MGMT</i> ─ 2007</div>
+                    </paper-item-body>
+                    <paper-icon-button icon="check"></paper-icon-button>
+                  </paper-item>
+                </section>
               </paper-material>
-
             </section>
 
             <section data-route="users">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Users</h2>
-                <p>This is the users section</p>
-                <a href="/users/Rob">Rob</a>
+                <h2 class="paper-font-title">
+                  Ranking
+                </h2>
+                <p>
+                  Aqui estão os usuários que tiveram as músicas
+                  mais votadas.
+                </p>
+                <section>
+                  <paper-icon-item>
+                    <div class="avatar rose" item-icon></div>
+                    Pedro Malaquias
+                  </paper-icon-item>
+                  <paper-icon-item>
+                    <div class="avatar darkred" item-icon></div>
+                    Maria Verde
+                  </paper-icon-item>
+                  <paper-icon-item>
+                    <div class="avatar amber" item-icon></div>
+                    Testerson Testa
+                  </paper-icon-item>
+                </section>
+
               </paper-material>
             </section>
 
             <section data-route="user-info">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">
-                User:<span>{{params.name}}</span>
+                  User:
+                  <span>{{params.name}}</span>
                 </h2>
-                <div>This is <span>{{params.name}}</span>'s section</div>
+                <div>This is
+                  <span>{{params.name}}</span>'s section</div>
               </paper-material>
             </section>
 
             <section data-route="contact">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Contact</h2>
-                <p>This is the contact section</p>
+                <h2 class="paper-font-title">Informações pessoais</h2>
+                <form>
+                  <p>
+                    <paper-input label="Nome" value="Pedremildo"></paper-input>
+                  </p>
+                  <p>
+                    <paper-input label="Sobrenome" value="Escavadeira Trunk"></paper-input>
+                  </p>
+                  <p>
+                    <paper-input type="date" label="Nascimento" value="09/08/1990"></paper-input>
+                  </p>
+                  <p>
+                    <span class="paper-font-caption jb-color-text--secondary-text">Foto</span>
+                    <span class="photo"></span>
+
+                  </p>
+                  <p class="text-center">
+                    <paper-button class="jb-color-color--primary jb-color-text-white" raised>Salvar</paper-button>
+                  </p>
+                </form>
               </paper-material>
             </section>
 

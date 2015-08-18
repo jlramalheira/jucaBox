@@ -22,11 +22,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* Application theme */
 
   :root {
-    --dark-primary-color: #303F9F;
-    --default-primary-color: #3F51B5;
-    --light-primary-color: #C5CAE9;
+    --dark-primary-color: #D50000;
+    --default-primary-color: #FF1744;
+    --light-primary-color: #FF8A80;
     --text-primary-color: #ffffff; /*text/icons*/
-    --accent-color: #FF4081;
+    --accent-color: #FFC400;
     --primary-background-color: #c5cae9;
     --primary-text-color: #212121;
     --secondary-text-color: #727272;
@@ -46,6 +46,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   /* General styles */
+  .jb-color-text--primary{
+    color: var(--default-primary-color);
+  }
+  .jb-color-text--accent{
+    color: var(--accent-color);
+  }
+  .jb-color-color--primary{
+    background-color: var(--default-primary-color);
+  }
+  .jb-color-text--primary-text{
+    color: var(--primary-text-color);
+  }
+  .jb-color-text--secondary-text{
+    color: var(--secondary-text-color);
+  }
+  .jb-color-text-white{
+    color: #fff;
+  }
 
   #drawerToolbar {
     color: var(--secondary-text-color);
